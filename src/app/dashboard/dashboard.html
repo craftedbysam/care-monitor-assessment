@@ -1,0 +1,26 @@
+<mat-card class="dashboard-card">
+  <mat-card-header>
+    <mat-card-title>
+      <mat-icon color="primary" fontIcon="person" class="dashboard-icon"></mat-icon>
+      <span class="dashboard-title">Welcome, {{ email }}</span>
+    </mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <p class="dashboard-subtext">You're successfully logged in. You can navigate to the list or logout below.</p>
+  </mat-card-content>
+
+  <mat-card-actions align="end" class="dashboard-actions">
+    <button mat-flat-button color="primary" routerLink="/list">
+      <mat-icon>list</mat-icon>
+      <span class="btn-text">Go to List</span>
+    </button>
+
+    <button mat-flat-button color="warn" (click)="logout()">
+      <mat-icon>logout</mat-icon>
+      <span class="btn-text">Logout</span>
+    </button>
+  </mat-card-actions>
+</mat-card>
+
+

@@ -1,140 +1,59 @@
-# care-monitor-assessment
-A full-stack Angular application with Node.js backend demonstrating authentication, routing, and HTTP client functionality.
+# CareMonitorAssessment
 
-# Project Overview
-This project is a web application built with Angular 20 and Node.js that includes:
-- User authentication with JWT tokens and HTTP-only cookies
-- Protected routes with route guards
-- Dashboard and list management
-- Responsive Material Design UI
-- Comprehensive unit testing
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.6.
 
-### Frontend
-**Angular 20** - Latest Angular framework with standalone components
-**Angular Material** - UI component library
-**RxJS** - Reactive programming
-**TypeScript** - Type-safe JavaScript
-**SCSS** - Styling
+## Development server
 
-### Backend
-**Node.js** - Server runtime
-**Express.js** - Web framework
-**JWT** - Authentication tokens
-**CORS** - Cross-origin resource sharing
-
-### Testing
-**Jasmine** - Testing framework
-**Karma** - Test runner
-
-### Prerequisites
-Before running this project, make sure you have:
-**Node.js** (v18 or higher)
-**npm** (v8 or higher)
-**Angular CLI** (v20 or higher)
-
-### Installation & Setup
-# 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/care-monitor-assessment.git
-cd care-monitor-assessment
-```
-
-# 2. Install Dependencies
-
-```bash
-npm install
-```
-
-### Running the Application
-# 1. Start the Backend Server
-
-```bash
-node server/app.js
-```
-The server will start on `http://localhost:3000`
-
-# 2. Start the Angular Frontend
+To start a local development server, run:
 
 ```bash
 ng serve
 ```
-The application will be available at `http://localhost:4200`
 
- Authentication
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-### Test Credentials
+## Code scaffolding
 
-Use these credentials to log in:
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-**Email**: `test@test.com`
-**Password**: `test123`
+```bash
+ng generate component component-name
+```
 
-OR
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-**Email**: `example@example.com`  
-**Password**: `example123`
+```bash
+ng generate --help
+```
 
-### Features:
-# 1. Authentication System
-- JWT token-based authentication
-- HTTP-only cookies for security
-- Route protection with guards
-- Automatic redirection for authenticated users
+## Building
 
-# 2. Dashboard
-- Welcome screen with user information
-- Navigation to list section
-- Logout functionality
+To build the project run:
 
-# 3. Items List
-- Displays a list of items from the API
-- Loading states and error handling
-- Expandable item details
-- Retry functionality on errors
+```bash
+ng build
+```
 
-# 4. UI/UX
-- Material Design components
-- Responsive layout
-- Form validation
-- Error messaging
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-### Testing
-# Run Unit Tests
+## Running unit tests
+
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
 ```bash
 ng test
 ```
 
-### Test Coverage
+## Running end-to-end tests
 
-The project includes comprehensive unit tests for:
-- Components (Login, Dashboard, List)
-- Services (AuthService, ListStore)
-- Route Guards (AuthGuard)
+For end-to-end (e2e) testing, run:
 
-### API Endpoints
-# 1. Authentication
-- `POST /api/login` - User login
+```bash
+ng e2e
+```
 
-# 2.Data
-- `GET /api/items` - Fetch items list
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-### Architecture
+## Additional Resources
 
-# 1. **Signal-based State Management**
-- Implemented Angular signals for reactive state management in the ListStore.
-
-# 2. **HTTP-only Cookies**
-- Chose HTTP-only cookies over localStorage for better XSS protection.
-
-# 3. **Reactive Forms**
-- Implemented reactive forms with comprehensive validation.
-
-# 4. Security
-- HTTP-only cookies prevent XSS attacks
-- CORS configuration for cross-origin requests
-- JWT tokens with expiration
-
-# 5. Performance
-- Lazy loading for protected routes
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
